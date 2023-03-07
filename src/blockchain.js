@@ -29,7 +29,7 @@ class BlockChain
         this.chain.push(newBlock);
     }
 */
-    setTransaction(transaction)
+    addTransaction(transaction)
     {
         this.pendingTransactions.push(transaction);
     }

@@ -17,8 +17,8 @@ syberianCoin.chain[1].hash = syberianCoin.chain[1].calculateHash();
 console.log(syberianCoin.validateChain());
 */
 
-syberianCoin.setTransaction(new Transaction('SyberianBank', 'user', 100));
-syberianCoin.setTransaction(new Transaction('Javi', 'Reme', 500));
+syberianCoin.addTransaction(new Transaction('SyberianBank', 'user', 100));
+syberianCoin.addTransaction(new Transaction('Javi', 'Reme', 500));
 
 console.log('Mining Starting...');
 syberianCoin.miningPendingTransactions('SyberianBank');
