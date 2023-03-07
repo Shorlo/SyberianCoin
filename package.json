@@ -1,5 +1,10 @@
 {
-  "dependencies": {
-    "crypto-js": "^4.1.1"
-  }
+    "scripts":
+    {
+        "start": "node src/app.js"
+    },
+    "dependencies":
+    {
+        "crypto-js": "^4.1.1"
+    }
 }
