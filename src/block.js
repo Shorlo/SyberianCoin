@@ -2,10 +2,10 @@ const SHA256 = require('crypto-js/sha256');
 
 class Block
 {
-    constructor(timestamp, data, previousHash = '')
+    constructor(timestamp, transactions, previousHash = '')
     {
         this.timestamp = timestamp;
-        this.data = data;
+        this.transactions = transactions;
         this.previousHash = previousHash;
         this.wildcard = 0;
         this.hash = this.calculateHash();
@@ -13,7 +13,7 @@ class Block
 
     calculateHash()
     {
-        return SHA256(this.timestamp + this.previousHash + JSON.stringify(this.data) + this.wildcard).toString();
+        return SHA256(this.timestamp + this.previousHash + JSON.stringify(this.transactions) + this.wildcard).toString();
     }
 
     miningBlock(difficulty)
