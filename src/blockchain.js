@@ -5,7 +5,9 @@ class BlockChain
     constructor()
     {
         this.chain = [this.createGenesisBlock()];
+        this.difficulty = 6;
     }
+
     createGenesisBlock()
     {
         return new Block('01/01/2023', 'Genesis Block', '0');
@@ -19,7 +21,7 @@ class BlockChain
     setBlock(newBlock)
     {
         newBlock.previousHash = this.getLastBlock().hash;
-        newBlock.hash = newBlock.calculateHash();
+        newBlock.miningBlock(this.difficulty);
         this.chain.push(newBlock);
     }
 
