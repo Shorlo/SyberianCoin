@@ -3,7 +3,7 @@
       / __/_ __/ /  ___ ____(_)__  ___  / ___/__  ___/ /__
  --- _\ \/ // / _ \/ -_) __/ / _ `/ _ \/ /__/ _ \/ _  / -_)---------------------
 |   /___/\_, /_.__/\__/_/ /_/\_,_/_//_/\___/\___/\_,_/\__/                      |
-|       /___/                                                                   |
+| Shorlo/___/                                                                   |
 |                                                                               |
 |   Copyright © 2022-2023 Javier Sainz de Baranda Goñi.                         |
 |   Released under the terms of the GNU Lesser General Public License v3.       |
